@@ -209,3 +209,23 @@ bouton.addEventListener("click", function() {
  document.body.style.backgroundColor = "lightblue";
  
 });
+
+let nomInput = document.getElementById("nom");
+let envoyerBtn = document.getElementById("envoyer");
+let liste = document.getElementById("liste");
+
+envoyerBtn.addEventListener("click", () => {
+
+let li = document.createElement("li");
+li.textContent = nomInput.value;
+li.style.color = "green";
+liste.appendChild(li);
+nomInput.value = "";
+});
+let citetions = [
+  "Le succès n'est pas la clé du bonheur. Le bonheur est la clé du succès.",
+  "La vie est ce qui arrive quand on est occupé à faire d'autres projets.",
+  "Ne jugez pas chaque jour à la récolte que vous faites, mais aux graines que vous plantez.",
+  "Le seul endroit où le succès vient avant le travail, c'est dans le dictionnaire."
+];
+citetions[0];
